@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pretérito Indefinido — Lección Completa (50 min) | A1+ / A2-</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Styles: Light-mode polish, English toggle, & Print CSS -->
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+
+    /* Smooth English toggle across static and dynamically injected elements */
+    .en-text {
+      transition: opacity 0.2s ease;
+    }
+    body.hide-english .en-text {
+      display: none !important;
+    }
+
+    /* Hide scrollbar on horizontal pill navigation while preserving scroll */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Print-friendly styles */
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        padding-bottom: 0 !important;
+      }
+      header,
+      #floatingAccentBar,
+      .no-print {
+        display: none !important;
+      }
+      section,
+      article {
+        break-inside: avoid-page;
+        box-shadow: none !important;
+        border-color: #cbd5e1 !important;
+      }
+      .print-expand {
+        display: block !important;
+      }
+      input[type="text"] {
+        border: none !important;
+        border-bottom: 1.5px solid #64748b !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+      }
+      textarea {
+        border: 1px solid #cbd5e1 !important;
+        min-height: 55px !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-[#1e293b] font-sans antialiased selection:bg-teal-200 selection:text-teal-900 pb-28">
+
+  <!-- ==================== TOP STICKY HEADER & NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm no-print">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 space-y-2.5">
+      <!-- Top Row: Title, Progress, Controls -->
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <!-- Title & Subtitle -->
+        <a href="#top" class="flex items-center gap-3 group min-w-0">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-teal-500 text-white flex items-center justify-center font-extrabold text-sm shadow-sm shrink-0 group-hover:scale-105 transition-transform">
+            50m
+          </div>
+          <div class="min-w-0">
+            <h1 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight truncate">
+              Pretérito Indefinido — Lección Completa (50 min)
+            </h1>
+            <p class="text-xs text-slate-500 font-medium truncate">
+              Nivel A1+ / A2- | Español Latinoamericano
+            </p>
+          </div>
+        </a>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-2 shrink-0">
+          <button
+            id="toggleEnglishBtn"
+            type="button"
+            class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 transition-colors cursor-pointer"
+            aria-pressed="true"
+            title="Mostrar u ocultar inglés / Show or hide English"
+          >
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+            </svg>
+            <span id="toggleEnglishLabel">Inglés: ON</span>
+          </button>
+
+          <button
+            type="button"
+            onclick="window.print()"
+            class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition-colors cursor-pointer"
+            title="Imprimir lección / Print lesson"
+          >
+            <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            <span class="hidden sm:inline">Imprimir</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Global Progress Bar Row -->
+      <div class="flex items-center gap-3">
+        <div class="flex-1 h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
+          <div id="globalProgressBar" class="h-full bg-gradient-to-r from-indigo-500 via-teal-500 to-emerald-500 rounded-full transition-all duration-500" style="width: 0%"></div>
+        </div>
+        <span id="globalScoreText" class="text-xs font-bold text-indigo-700 whitespace-nowrap">
+          0 / 70 completados (0%)
+        </span>
+      </div>
+
+      <!-- Quick-Navigation Pill Bar -->
+      <nav aria-label="Navegación rápida" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-0.5 text-xs font-semibold">
+        <a href="#guia-visual" class="px-2.5 py-1.5 rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 whitespace-nowrap transition-colors">
+          Guía Visual <span class="font-normal opacity-80">~8m</span>
+        </a>
+        <a href="#sec-1" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          1. Opción Múltiple <span class="font-normal opacity-75">5m</span>
+        </a>
+        <a href="#sec-2" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          2. Regulares <span class="font-normal opacity-75">6m</span>
+        </a>
+        <a href="#sec-3" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          3. Irregulares <span class="font-normal opacity-75">7m</span>
+        </a>
+        <a href="#sec-4" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          4. Detective <span class="font-normal opacity-75">6m</span>
+        </a>
+        <a href="#sec-5" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          5. Historia Oaxaca <span class="font-normal opacity-75">7m</span>
+        </a>
+        <a href="#sec-6" class="px-2.5 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-teal-50 hover:text-teal-700 border border-slate-200 whitespace-nowrap transition-colors">
+          6. Ordenar <span class="font-normal opacity-75">7m</span>
+        </a>
+        <a href="#sec-7" class="px-2.5 py-1.5 rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200 whitespace-nowrap transition-colors">
+          7. Conversación <span class="font-normal opacity-80">12m</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="top" class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-8">
+
+    <!-- Print-Only Title Banner -->
+    <div class="hidden print:block border-b-2 border-slate-300 pb-4 mb-6">
+      <h1 class="text-2xl font-extrabold text-slate-900">Pretérito Indefinido — Lección Completa (50 min)</h1>
+      <p class="text-sm text-slate-600">Nivel A1+ / A2- | Español Latinoamericano | 70 Ejercicios</p>
+    </div>
+
+    <!-- ==================== PART 1: GUÍA VISUAL RÁPIDA ==================== -->
+    <section id="guia-visual" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+      <!-- Guide Header (Collapsible Trigger) -->
+      <div class="p-5 sm:p-7 bg-gradient-to-r from-indigo-50 via-white to-teal-50 border-b border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-extrabold text-lg shadow-sm shrink-0">
+            📘
+          </div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">Parte 1: Guía Visual Rápida</h2>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-700 border border-indigo-200">~8–10 min</span>
+            </div>
+            <p class="en-text text-sm text-slate-600 font-medium mt-0.5">Quick Visual Reference Guide — Spanish Simple Past (Latin American Spanish)</p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="toggleGuideBtn"
+          class="no-print inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 shadow-xs transition-colors cursor-pointer"
+          aria-expanded="true"
+        >
+          <span id="toggleGuideLabel">Ocultar guía</span>
+          <svg id="toggleGuideChevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Guide Body -->
+      <div id="guideContent" class="p-5 sm:p-7 space-y-8 print-expand">
+
+        <!-- 1. ¿Cuándo se usa? -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 font-extrabold text-sm flex items-center justify-center shrink-0">1</span>
+            <h3 class="text-lg font-bold text-slate-900">
+              ¿Cuándo se usa? <span class="en-text font-medium text-indigo-600 text-base">/ When do we use it?</span>
+            </h3>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 items-start">
+            <div class="space-y-3 text-sm sm:text-base text-slate-700 leading-relaxed">
+              <p>
+                Usamos el <strong class="text-indigo-700">pretérito indefinido</strong> para hablar de <strong>acciones terminadas en el pasado</strong> que ocurrieron en un momento específico (tienen inicio y fin claros).
+              </p>
+              <p class="en-text text-sm text-slate-500 bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
+                We use the <strong>preterite (simple past)</strong> for <strong>completed actions in the past</strong> that happened at a specific moment (with a clear beginning and end).
+              </p>
+              <div class="p-3.5 rounded-2xl bg-teal-50 border border-teal-200 text-sm">
+                <p class="font-bold text-teal-900">Ejemplo <span class="en-text font-normal">/ Example:</span></p>
+                <p class="mt-1 text-teal-800 font-medium">Ayer <span class="underline decoration-amber-500 decoration-2 font-bold">cené</span> tacos al pastor con mis amigos.</p>
+                <p class="en-text text-teal-700 italic">Yesterday I had tacos al pastor for dinner with my friends.</p>
+              </div>
+            </div>
+
+            <!-- Time Markers -->
+            <div class="bg-slate-50 rounded-2xl border border-slate-200 p-4">
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-600 mb-3">
+                Marcadores temporales clave <span class="en-text font-normal normal-case text-slate-500">/ Key Time Markers</span>
+              </p>
+              <div class="grid grid-cols-2 gap-2 text-sm">
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">ayer</p>
+                  <p class="en-text text-xs text-slate-500">yesterday</p>
+                </div>
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">anoche</p>
+                  <p class="en-text text-xs text-slate-500">last night</p>
+                </div>
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">la semana pasada</p>
+                  <p class="en-text text-xs text-slate-500">last week</p>
+                </div>
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">el mes pasado</p>
+                  <p class="en-text text-xs text-slate-500">last month</p>
+                </div>
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">hace dos días</p>
+                  <p class="en-text text-xs text-slate-500">two days ago</p>
+                </div>
+                <div class="bg-white rounded-xl px-3 py-2 border border-slate-200">
+                  <p class="font-bold text-indigo-700">en 2022</p>
+                  <p class="en-text text-xs text-slate-500">in 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-slate-200" />
+
+        <!-- 2. Verbos Regulares -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-lg bg-teal-100 text-teal-700 font-extrabold text-sm flex items-center justify-center shrink-0">2</span>
+            <h3 class="text-lg font-bold text-slate-900">
+              Verbos Regulares <span class="en-text font-medium text-teal-600 text-base">/ Regular Verbs (-AR, -ER, -IR)</span>
+            </h3>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-5">
+            <!-- -AR Table (5 persons, NO vosotros) -->
+            <div class="rounded-2xl border border-teal-200 overflow-hidden bg-white">
+              <div class="bg-teal-600 text-white px-4 py-3 flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-sm sm:text-base">Verbos en -AR</h4>
+                  <p class="text-xs text-teal-100">Ejemplo: <strong>hablar</strong> <span class="en-text">(to speak)</span></p>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-white/20 text-xs font-bold">habl-</span>
+              </div>
+              <table class="w-full text-left text-sm">
+                <thead class="bg-teal-50 text-teal-900 text-xs uppercase border-b border-teal-200">
+                  <tr>
+                    <th class="px-4 py-2 font-semibold">Pronombre</th>
+                    <th class="px-4 py-2 font-semibold">Terminación</th>
+                    <th class="px-4 py-2 font-semibold">Hablar</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr class="bg-amber-50/70">
+                    <td class="px-4 py-2.5 font-medium text-slate-700">yo</td>
+                    <td class="px-4 py-2.5 font-extrabold text-teal-700">-é <span class="text-amber-600 text-xs">★</span></td>
+                    <td class="px-4 py-2.5 font-semibold">habl<span class="text-teal-700 font-extrabold">é</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">tú</td>
+                    <td class="px-4 py-2.5 font-bold text-teal-700">-aste</td>
+                    <td class="px-4 py-2.5 font-semibold">habl<span class="text-teal-700 font-bold">aste</span></td>
+                  </tr>
+                  <tr class="bg-amber-50/70">
+                    <td class="px-4 py-2.5 font-medium text-slate-700">él / ella / usted</td>
+                    <td class="px-4 py-2.5 font-extrabold text-teal-700">-ó <span class="text-amber-600 text-xs">★</span></td>
+                    <td class="px-4 py-2.5 font-semibold">habl<span class="text-teal-700 font-extrabold">ó</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">nosotros / as</td>
+                    <td class="px-4 py-2.5 font-bold text-teal-700">-amos</td>
+                    <td class="px-4 py-2.5 font-semibold">habl<span class="text-teal-700 font-bold">amos</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">ellos / ellas / ustedes</td>
+                    <td class="px-4 py-2.5 font-bold text-teal-700">-aron</td>
+                    <td class="px-4 py-2.5 font-semibold">habl<span class="text-teal-700 font-bold">aron</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- -ER / -IR Table (5 persons, NO vosotros) -->
+            <div class="rounded-2xl border border-indigo-200 overflow-hidden bg-white">
+              <div class="bg-indigo-600 text-white px-4 py-3 flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-sm sm:text-base">Verbos en -ER y -IR</h4>
+                  <p class="text-xs text-indigo-100"><strong>comer</strong> <span class="en-text">(eat)</span> / <strong>vivir</strong> <span class="en-text">(live)</span></p>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-white/20 text-xs font-bold">¡Idénticos!</span>
+              </div>
+              <table class="w-full text-left text-sm">
+                <thead class="bg-indigo-50 text-indigo-900 text-xs uppercase border-b border-indigo-200">
+                  <tr>
+                    <th class="px-4 py-2 font-semibold">Pronombre</th>
+                    <th class="px-4 py-2 font-semibold">Terminación</th>
+                    <th class="px-4 py-2 font-semibold">Comer / Vivir</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr class="bg-amber-50/70">
+                    <td class="px-4 py-2.5 font-medium text-slate-700">yo</td>
+                    <td class="px-4 py-2.5 font-extrabold text-indigo-700">-í <span class="text-amber-600 text-xs">★</span></td>
+                    <td class="px-4 py-2.5 font-semibold">com<span class="text-indigo-700 font-extrabold">í</span> / viv<span class="text-indigo-700 font-extrabold">í</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">tú</td>
+                    <td class="px-4 py-2.5 font-bold text-indigo-700">-iste</td>
+                    <td class="px-4 py-2.5 font-semibold">com<span class="text-indigo-700 font-bold">iste</span> / viv<span class="text-indigo-700 font-bold">iste</span></td>
+                  </tr>
+                  <tr class="bg-amber-50/70">
+                    <td class="px-4 py-2.5 font-medium text-slate-700">él / ella / usted</td>
+                    <td class="px-4 py-2.5 font-extrabold text-indigo-700">-ió <span class="text-amber-600 text-xs">★</span></td>
+                    <td class="px-4 py-2.5 font-semibold">com<span class="text-indigo-700 font-extrabold">ió</span> / viv<span class="text-indigo-700 font-extrabold">ió</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">nosotros / as</td>
+                    <td class="px-4 py-2.5 font-bold text-indigo-700">-imos</td>
+                    <td class="px-4 py-2.5 font-semibold">com<span class="text-indigo-700 font-bold">imos</span> / viv<span class="text-indigo-700 font-bold">imos</span></td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2.5 font-medium text-slate-700">ellos / ellas / ustedes</td>
+                    <td class="px-4 py-2.5 font-bold text-indigo-700">-ieron</td>
+                    <td class="px-4 py-2.5 font-semibold">com<span class="text-indigo-700 font-bold">ieron</span> / viv<span class="text-indigo-700 font-bold">ieron</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 3 Memory Tricks -->
+          <div class="rounded-2xl bg-amber-50 border border-amber-200 p-4 sm:p-5">
+            <h4 class="text-sm font-bold text-amber-900 mb-3 flex items-center gap-1.5">
+              <span>💡</span> 3 Trucos de Memoria <span class="en-text font-normal text-amber-700">/ 3 Memory Tricks</span>
+            </h4>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+              <div class="bg-white rounded-xl p-3.5 border border-amber-200">
+                <p class="font-bold text-slate-900">1. Tildes solo en ★</p>
+                <p class="text-slate-700 mt-1">Solo <strong>yo</strong> (-é, -í) y <strong>él/ella/usted</strong> (-ó, -ió) llevan tilde. ¡Cuidado! <em>hablo</em> (presente) ≠ <em>habló</em> (pasado).</p>
+                <p class="en-text text-xs text-slate-500 mt-1 italic">Accents go ONLY on <strong>yo</strong> and <strong>él/ella/usted</strong>. <em>hablo</em> (I speak) ≠ <em>habló</em> (he/she spoke).</p>
+              </div>
+              <div class="bg-white rounded-xl p-3.5 border border-amber-200">
+                <p class="font-bold text-slate-900">2. -ER e -IR son iguales</p>
+                <p class="text-slate-700 mt-1">Los verbos en <strong>-ER</strong> y <strong>-IR</strong> usan exactamente las mismas terminaciones. ¡Solo memorizas 2 tablas!</p>
+                <p class="en-text text-xs text-slate-500 mt-1 italic"><strong>-ER</strong> and <strong>-IR</strong> share identical endings. Only 2 patterns to memorize!</p>
+              </div>
+              <div class="bg-white rounded-xl p-3.5 border border-amber-200">
+                <p class="font-bold text-slate-900">3. Nosotros = Presente</p>
+                <p class="text-slate-700 mt-1">En <strong>-AR</strong> (<em>hablamos</em>) e <strong>-IR</strong> (<em>vivimos</em>), <em>nosotros</em> es igual al presente. El contexto indica el pasado.</p>
+                <p class="en-text text-xs text-slate-500 mt-1 italic">For <strong>-AR</strong> and <strong>-IR</strong>, <em>nosotros</em> is identical to the present tense. Context tells you it's past.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-slate-200" />
+
+        <!-- 3. Verbos Irregulares por Familias -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-800 font-extrabold text-sm flex items-center justify-center shrink-0">3</span>
+            <h3 class="text-lg font-bold text-slate-900">
+              Verbos Irregulares por Familias <span class="en-text font-medium text-amber-700 text-base">/ Irregular Verbs by Family</span>
+            </h3>
+          </div>
+
+          <!-- Regla de Oro -->
+          <div class="rounded-2xl bg-gradient-to-r from-indigo-50 via-teal-50 to-amber-50 border-2 border-indigo-200 p-4 sm:p-5">
+            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-indigo-600 text-white mb-2">
+              Regla de Oro / Golden Rule
+            </span>
+            <p class="text-sm sm:text-base font-bold text-slate-900">
+              Las raíces irregulares (Grupos U, I, J) comparten estas terminaciones y <span class="text-rose-600 underline decoration-2">NO llevan tilde</span>:
+            </p>
+            <p class="en-text text-xs sm:text-sm text-slate-600 mt-0.5">
+              Irregular stem verbs (U, I, J groups) all share these endings and have <strong>NO accent marks</strong>:
+            </p>
+            <div class="grid grid-cols-5 gap-2 mt-3 text-center text-xs sm:text-sm">
+              <div class="bg-white rounded-xl py-2 px-1 border border-indigo-200">
+                <span class="block text-slate-500 text-[11px]">yo</span>
+                <span class="font-extrabold text-indigo-700 text-base">-e</span>
+              </div>
+              <div class="bg-white rounded-xl py-2 px-1 border border-indigo-200">
+                <span class="block text-slate-500 text-[11px]">tú</span>
+                <span class="font-extrabold text-indigo-700 text-base">-iste</span>
+              </div>
+              <div class="bg-white rounded-xl py-2 px-1 border border-indigo-200">
+                <span class="block text-slate-500 text-[11px]">él/ella/ud.</span>
+                <span class="font-extrabold text-indigo-700 text-base">-o</span>
+              </div>
+              <div class="bg-white rounded-xl py-2 px-1 border border-indigo-200">
+                <span class="block text-slate-500 text-[11px]">nosotros/as</span>
+                <span class="font-extrabold text-indigo-700 text-base">-imos</span>
+              </div>
+              <div class="bg-white rounded-xl py-2 px-1 border border-indigo-200">
+                <span class="block text-slate-500 text-[11px]">ellos/uds.</span>
+                <span class="font-extrabold text-indigo-700 text-sm sm:text-base">-ieron <span class="text-rose-600 text-xs">(-eron*)</span></span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-2">
+              * Grupo J (<em>decir, traer</em>) usa <strong class="text-rose-600">-eron</strong> sin "i": <em>dijeron, trajeron</em>.
+              <span class="en-text text-slate-500"> / J-stems drop the "i" in ellos/ustedes: <strong>-eron</strong>.</span>
+            </p>
+          </div>
+
+          <!-- 5 Irregular Family Cards -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3.5 text-sm">
+            <div class="rounded-2xl border border-teal-200 bg-teal-50/40 p-4">
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-teal-900">Los Gemelos</h4>
+                <span class="en-text text-[11px] font-semibold text-teal-700 bg-teal-100 px-2 py-0.5 rounded-full">The Twins</span>
+              </div>
+              <p class="text-slate-700 text-xs sm:text-sm mb-2"><strong>ir</strong> <span class="en-text text-slate-500">(go)</span> y <strong>ser</strong> <span class="en-text text-slate-500">(be)</span> son idénticos:</p>
+              <p class="font-mono text-xs bg-white rounded-xl p-2.5 border border-teal-200 text-teal-900 font-semibold">
+                fui, fuiste, fue, fuimos, fueron
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-indigo-200 bg-indigo-50/40 p-4">
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-indigo-900">Grupo U</h4>
+                <span class="en-text text-[11px] font-semibold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full">U-Stems</span>
+              </div>
+              <ul class="space-y-1 text-xs sm:text-sm text-slate-700">
+                <li><strong>tener</strong> → <span class="font-bold text-indigo-700">tuv-</span> (tuve)</li>
+                <li><strong>estar</strong> → <span class="font-bold text-indigo-700">estuv-</span> (estuve)</li>
+                <li><strong>poder</strong> → <span class="font-bold text-indigo-700">pud-</span> (pude)</li>
+                <li><strong>poner</strong> → <span class="font-bold text-indigo-700">pus-</span> (puse)</li>
+                <li><strong>saber</strong> → <span class="font-bold text-indigo-700">sup-</span> (supe)</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-violet-200 bg-violet-50/40 p-4">
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-violet-900">Grupo I</h4>
+                <span class="en-text text-[11px] font-semibold text-violet-700 bg-violet-100 px-2 py-0.5 rounded-full">I-Stems</span>
+              </div>
+              <ul class="space-y-1 text-xs sm:text-sm text-slate-700">
+                <li><strong>hacer</strong> → <span class="font-bold text-violet-700">hic- / hiz-</span> (hice, <strong>hizo</strong>)</li>
+                <li><strong>querer</strong> → <span class="font-bold text-violet-700">quis-</span> (quise)</li>
+                <li><strong>venir</strong> → <span class="font-bold text-violet-700">vin-</span> (vine)</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-rose-200 bg-rose-50/40 p-4">
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-rose-900">Grupo J</h4>
+                <span class="en-text text-[11px] font-semibold text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">J-Stems</span>
+              </div>
+              <ul class="space-y-1 text-xs sm:text-sm text-slate-700">
+                <li><strong>decir</strong> → <span class="font-bold text-rose-700">dij-</span> (dije, <strong>dijeron</strong>)</li>
+                <li><strong>traer</strong> → <span class="font-bold text-rose-700">traj-</span> (traje, <strong>trajeron</strong>)</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-amber-200 bg-amber-50/40 p-4 md:col-span-2">
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-amber-900">Cortos (¡Sin tildes!)</h4>
+                <span class="en-text text-[11px] font-semibold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full">Short Verbs</span>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-2.5 text-xs">
+                <div class="bg-white rounded-xl p-2.5 border border-amber-200">
+                  <p class="font-bold text-slate-900">ver <span class="en-text font-normal text-slate-500">(to see)</span></p>
+                  <p class="font-mono text-slate-700 mt-1">vi, viste, vio, vimos, vieron</p>
+                </div>
+                <div class="bg-white rounded-xl p-2.5 border border-amber-200">
+                  <p class="font-bold text-slate-900">dar <span class="en-text font-normal text-slate-500">(to give)</span></p>
+                  <p class="font-mono text-slate-700 mt-1">di, diste, dio, dimos, dieron</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 Interactive Flashcards -->
+          <div class="pt-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">
+                  12 Tarjetas Interactivas de Verbos Irregulares
+                </h4>
+                <p class="en-text text-xs text-slate-500">Click any flashcard to expand its 5-person conjugation and bilingual example.</p>
+              </div>
+              <button
+                type="button"
+                id="toggleAllCardsBtn"
+                class="no-print px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer"
+              >
+                Expandir todas
+              </button>
+            </div>
+            <div id="irregularCardsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PART 2: 70 INTERACTIVE EXERCISES ==================== -->
+    <div class="space-y-2 pt-2">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Parte 2: Banco de 70 Ejercicios Interactivos</h2>
+      <p class="en-text text-sm sm:text-base text-slate-500 font-medium">7 varied sections × 10 exercises each — designed for a complete 50-minute Spanish class.</p>
+    </div>
+
+    <!-- SECTION 1: CALENTAMIENTO — OPCIÓN MÚLTIPLE -->
+    <section id="sec-1" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-teal-100 text-teal-800 text-xs font-extrabold">Sección 1</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~5 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Calentamiento — Opción Múltiple</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Elige la opción correcta en pretérito indefinido. Recibirás retroalimentación inmediata.
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Choose the correct preterite option. You will receive instant feedback.</span>
+          </p>
+        </div>
+        <div id="sec-1-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-1-list" class="space-y-3.5"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-1-show" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-1-reset" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: VERBOS REGULARES — COMPLETA LA ORACIÓN -->
+    <section id="sec-2" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-indigo-100 text-indigo-800 text-xs font-extrabold">Sección 2</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~6 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Verbos Regulares — Completa la oración</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Conjuga cada verbo regular en pretérito indefinido. Usa la barra de tildes abajo si la necesitas.
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Conjugate each regular verb in the preterite. Use the accent bar below if needed.</span>
+          </p>
+        </div>
+        <div id="sec-2-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-2-list" class="space-y-3"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-2-check" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors cursor-pointer">
+          Verificar sección <span class="en-text font-normal opacity-90">/ Check Section</span>
+        </button>
+        <button type="button" id="sec-2-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-2-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VERBOS IRREGULARES — COMPLETA LA ORACIÓN -->
+    <section id="sec-3" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-800 text-xs font-extrabold">Sección 3</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~7 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Verbos Irregulares — Completa la oración</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Practica los verbos irregulares más frecuentes. Recuerda: ¡no llevan tilde!
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Practice the most frequent irregular verbs. Remember: no accent marks!</span>
+          </p>
+        </div>
+        <div id="sec-3-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-3-list" class="space-y-3"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-3-check" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors cursor-pointer">
+          Verificar sección <span class="en-text font-normal opacity-90">/ Check Section</span>
+        </button>
+        <button type="button" id="sec-3-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-3-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ¡DETECTIVE DE ERRORES! -->
+    <section id="sec-4" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-rose-100 text-rose-800 text-xs font-extrabold">Sección 4</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~6 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">¡Detective de Errores! — Corrige el verbo</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Cada oración tiene un error muy común marcado en rojo. Escribe la forma correcta del verbo.
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Each sentence has a common mistake highlighted in red. Type the corrected verb.</span>
+          </p>
+        </div>
+        <div id="sec-4-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-4-list" class="space-y-3"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-4-check" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors cursor-pointer">
+          Verificar sección <span class="en-text font-normal opacity-90">/ Check Section</span>
+        </button>
+        <button type="button" id="sec-4-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-4-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 5: HISTORIA EN CONTEXTO — "UN FIN DE SEMANA EN OAXACA" -->
+    <section id="sec-5" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-extrabold">Sección 5</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~7 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Historia en Contexto — "Un fin de semana en Oaxaca"</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Completa la historia con los 10 verbos entre paréntesis (mezcla de regulares e irregulares).
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Complete the story using the 10 verbs in parentheses (mix of regular and irregular).</span>
+          </p>
+        </div>
+        <div id="sec-5-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <!-- Story Card -->
+      <div id="oaxacaStoryBox" class="rounded-2xl bg-slate-50 border border-slate-200 p-5 sm:p-6 text-sm sm:text-base leading-loose text-slate-800 space-y-4"></div>
+
+      <!-- Story Feedback Summary -->
+      <div id="sec-5-feedback" class="hidden rounded-2xl p-4 text-xs sm:text-sm border"></div>
+
+      <!-- Collapsible English Translation of the Story -->
+      <div class="space-y-2">
+        <button
+          type="button"
+          id="toggleStoryEnBtn"
+          class="no-print inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 transition-colors cursor-pointer"
+        >
+          <span>📖</span> Ver traducción de la historia al inglés / Show Story Translation
+        </button>
+        <div id="oaxacaStoryEn" class="hidden rounded-2xl bg-amber-50/70 border border-amber-200 p-4 text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+          <p class="font-bold text-amber-900">A Weekend in Oaxaca (English Translation)</p>
+          <p>
+            Last weekend, my best friend Valeria and I <strong>went</strong> (1. ir) to Oaxaca. On Friday night we <strong>arrived</strong> (2. llegar) at a very pretty hotel near the Zócalo. On Saturday morning we <strong>had</strong> (3. tener) a delicious breakfast with hot chocolate and pan de yema. Then we <strong>visited</strong> (4. visitar) Monte Albán and <strong>took</strong> (5. tomar) many photos of the pyramids.
+          </p>
+          <p>
+            In the afternoon, we <strong>walked</strong> (6. caminar) downtown and I <strong>bought</strong> (7. comprar) a colorful alebrije for my mom. At night we <strong>ate</strong> (8. comer) giant tlayudas at a traditional market. On Sunday we <strong>saw</strong> (9. ver) a traditional dance show in the main square. The trip <strong>was</strong> (10. ser) unforgettable!
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-5-check" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors cursor-pointer">
+          Verificar sección <span class="en-text font-normal opacity-90">/ Check Section</span>
+        </button>
+        <button type="button" id="sec-5-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-5-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONSTRUCTOR DE ORACIONES — ORDENA LAS PALABRAS -->
+    <section id="sec-6" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-violet-100 text-violet-800 text-xs font-extrabold">Sección 6</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~7 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Constructor de Oraciones — Ordena las palabras</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Haz clic en cada palabra para construir la oración correcta. Haz clic en una palabra colocada para devolverla al banco.
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Click each word chip to build the correct sentence. Click a placed word to return it to the bank.</span>
+          </p>
+        </div>
+        <div id="sec-6-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-6-list" class="space-y-4"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-6-check" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors cursor-pointer">
+          Verificar sección <span class="en-text font-normal opacity-90">/ Check Section</span>
+        </button>
+        <button type="button" id="sec-6-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar respuestas <span class="en-text font-normal">/ Show Answers</span>
+        </button>
+        <button type="button" id="sec-6-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PRODUCCIÓN ORAL Y ESCRITA — CONVERSACIÓN -->
+    <section id="sec-7" class="scroll-mt-36 bg-white rounded-3xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-800 text-xs font-extrabold">Sección 7</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">~12 min</span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">Producción Oral y Escrita — Conversación</h3>
+          <p class="text-sm text-slate-600 mt-0.5">
+            Responde en voz alta con tu profesor o escribe tus notas. Marca cada pregunta como <strong>✓ Practicada</strong> al terminarla.
+            <span class="en-text block text-xs text-slate-500 mt-0.5">Answer aloud with your teacher or write notes. Check off <strong>✓ Practicada</strong> as you finish each question.</span>
+          </p>
+        </div>
+        <div id="sec-7-score" class="px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+          0 / 10
+        </div>
+      </div>
+
+      <div id="sec-7-list" class="grid md:grid-cols-2 gap-4"></div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 no-print">
+        <button type="button" id="sec-7-show" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 transition-colors cursor-pointer">
+          Mostrar todos los ejemplos <span class="en-text font-normal">/ Show All Examples</span>
+        </button>
+        <button type="button" id="sec-7-reset" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 transition-colors cursor-pointer">
+          Reiniciar sección <span class="en-text font-normal">/ Reset</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs sm:text-sm text-slate-500 pt-4 pb-6 border-t border-slate-200">
+      <p class="font-semibold text-slate-700">¡Excelente trabajo! Has completado tu práctica de Pretérito Indefinido.</p>
+      <p class="en-text mt-0.5">Great job! You've worked through your Simple Past Spanish lesson.</p>
+    </footer>
+  </main>
+
+  <!-- ==================== FLOATING ACCENT BAR ==================== -->
+  <div id="floatingAccentBar" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 no-print max-w-[95vw]">
+    <div class="bg-white/95 backdrop-blur-md border border-indigo-200 shadow-lg rounded-full px-3 py-2 flex items-center gap-1.5 sm:gap-2">
+      <span class="hidden sm:inline text-xs font-bold text-slate-500 pl-1.5 pr-1">Tildes:</span>
+      <button type="button" data-char="á" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">á</button>
+      <button type="button" data-char="é" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">é</button>
+      <button type="button" data-char="í" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">í</button>
+      <button type="button" data-char="ó" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">ó</button>
+      <button type="button" data-char="ú" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">ú</button>
+      <button type="button" data-char="ñ" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-800 font-bold text-sm sm:text-base border border-indigo-200 transition-colors cursor-pointer flex items-center justify-center">ñ</button>
+      <button type="button" data-char="¿" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-teal-50 hover:bg-teal-600 hover:text-white text-teal-800 font-bold text-sm sm:text-base border border-teal-200 transition-colors cursor-pointer flex items-center justify-center">¿</button>
+      <button type="button" data-char="¡" class="accent-btn w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-teal-50 hover:bg-teal-600 hover:text-white text-teal-800 font-bold text-sm sm:text-base border border-teal-200 transition-colors cursor-pointer flex items-center justify-center">¡</button>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT APPLICATION ==================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // =========================================================================
+      // GLOBAL STATE
+      // =========================================================================
+      const TOTAL_EXERCISES = 70;
+      const sectionScores = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0 };
+      let lastFocusedField = null;
+
+      // Utility: Remove Spanish accents for smart typo detection
+      function stripAccents(str) {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      // Utility: Update a section's score pill and global 70-exercise tracker
+      function updateScore(secNum, score) {
+        sectionScores[secNum] = score;
+        const pill = document.getElementById(`sec-${secNum}-score`);
+        if (pill) {
+          pill.textContent = `${score} / 10`;
+          pill.className = 'px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold border shrink-0 transition-colors ';
+          if (score === 10) {
+            pill.className += 'bg-emerald-100 text-emerald-800 border-emerald-300';
+          } else if (score >= 7) {
+            pill.className += 'bg-amber-100 text-amber-800 border-amber-300';
+          } else {
+            pill.className += 'bg-slate-100 text-slate-700 border-slate-200';
+          }
+        }
+
+        const total = Object.values(sectionScores).reduce((a, b) => a + b, 0);
+        const pct = Math.round((total / TOTAL_EXERCISES) * 100);
+        const bar = document.getElementById('globalProgressBar');
+        const txt = document.getElementById('globalScoreText');
+        if (bar) bar.style.width = `${pct}%`;
+        if (txt) txt.textContent = `${total} / ${TOTAL_EXERCISES} completados (${pct}%)`;
+      }
+
+      // =========================================================================
+      // PART 1 DATA: 12 IRREGULAR FLASHCARDS (5-PERSON LATAM ONLY, NO VOSOTROS)
+      // =========================================================================
+      const pronounsLatam = ['yo', 'tú', 'él / ella / usted', 'nosotros / as', 'ellos / ellas / ustedes'];
+
+      const irregularFlashcards = [
+        {
+          verb: 'ir / ser', en: 'to go / to be', family: 'Los Gemelos',
+          badge: 'bg-teal-100 text-teal-800',
+          forms: ['fui', 'fuiste', 'fue', 'fuimos', 'fueron'],
+          exEs: 'Ayer fui al concierto y fue increíble.',
+          exEn: 'Yesterday I went to the concert and it was incredible.'
+        },
+        {
+          verb: 'tener', en: 'to have', family: 'Grupo U (tuv-)',
+          badge: 'bg-indigo-100 text-indigo-800',
+          forms: ['tuve', 'tuviste', 'tuvo', 'tuvimos', 'tuvieron'],
+          exEs: 'El lunes tuve mucho trabajo en la oficina.',
+          exEn: 'On Monday I had a lot of work at the office.'
+        },
+        {
+          verb: 'estar', en: 'to be (state/place)', family: 'Grupo U (estuv-)',
+          badge: 'bg-indigo-100 text-indigo-800',
+          forms: ['estuve', 'estuviste', 'estuvo', 'estuvimos', 'estuvieron'],
+          exEs: 'Anoche estuvimos en casa de mis tíos.',
+          exEn: 'Last night we were at my aunt and uncle\'s house.'
+        },
+        {
+          verb: 'hacer', en: 'to do / to make', family: 'Grupo I (hic-/hiz-)',
+          badge: 'bg-violet-100 text-violet-800',
+          forms: ['hice', 'hiciste', 'hizo', 'hicimos', 'hicieron'],
+          exEs: 'Mi papá hizo chilaquiles el domingo.',
+          exEn: 'My dad made chilaquiles on Sunday.'
+        },
+        {
+          verb: 'poder', en: 'can / to be able to', family: 'Grupo U (pud-)',
+          badge: 'bg-indigo-100 text-indigo-800',
+          forms: ['pude', 'pudiste', 'pudo', 'pudimos', 'pudieron'],
+          exEs: 'No pude ir a la fiesta porque llovió.',
+          exEn: 'I couldn\'t go to the party because it rained.'
+        },
+        {
+          verb: 'poner', en: 'to put / place', family: 'Grupo U (pus-)',
+          badge: 'bg-indigo-100 text-indigo-800',
+          forms: ['puse', 'pusiste', 'puso', 'pusimos', 'pusieron'],
+          exEs: 'Ella puso su mochila sobre la silla.',
+          exEn: 'She put her backpack on the chair.'
+        },
+        {
+          verb: 'saber', en: 'to find out / know', family: 'Grupo U (sup-)',
+          badge: 'bg-indigo-100 text-indigo-800',
+          forms: ['supe', 'supiste', 'supo', 'supimos', 'supieron'],
+          exEs: 'Ayer supe la noticia de tu viaje.',
+          exEn: 'Yesterday I found out the news about your trip.'
+        },
+        {
+          verb: 'querer', en: 'to want / try', family: 'Grupo I (quis-)',
+          badge: 'bg-violet-100 text-violet-800',
+          forms: ['quise', 'quisiste', 'quiso', 'quisimos', 'quisieron'],
+          exEs: 'Ellos quisieron comprar boletos, pero ya no había.',
+          exEn: 'They wanted to buy tickets, but there were none left.'
+        },
+        {
+          verb: 'venir', en: 'to come', family: 'Grupo I (vin-)',
+          badge: 'bg-violet-100 text-violet-800',
+          forms: ['vine', 'viniste', 'vino', 'vinimos', 'vinieron'],
+          exEs: '¿A qué hora viniste a la escuela hoy?',
+          exEn: 'What time did you come to school today?'
+        },
+        {
+          verb: 'decir', en: 'to say / to tell', family: 'Grupo J (dij-)',
+          badge: 'bg-rose-100 text-rose-800',
+          forms: ['dije', 'dijiste', 'dijo', 'dijimos', 'dijeron'],
+          exEs: 'Mis amigos me dijeron la verdad.',
+          exEn: 'My friends told me the truth.'
+        },
+        {
+          verb: 'dar', en: 'to give', family: 'Corto (sin tilde)',
+          badge: 'bg-amber-100 text-amber-800',
+          forms: ['di', 'diste', 'dio', 'dimos', 'dieron'],
+          exEs: 'La maestra nos dio la tarea el viernes.',
+          exEn: 'The teacher gave us the homework on Friday.'
+        },
+        {
+          verb: 'ver', en: 'to see / to watch', family: 'Corto (sin tilde)',
+          badge: 'bg-amber-100 text-amber-800',
+          forms: ['vi', 'viste', 'vio', 'vimos', 'vieron'],
+          exEs: 'Anoche vimos una película mexicana.',
+          exEn: 'Last night we watched a Mexican movie.'
+        }
+      ];
+
+      function renderIrregularFlashcards() {
+        const grid = document.getElementById('irregularCardsGrid');
+        if (!grid) return;
+
+        grid.innerHTML = irregularFlashcards.map((item, idx) => `
+          <div class="flashcard rounded-2xl border border-slate-200 bg-slate-50/70 hover:border-indigo-300 transition-colors overflow-hidden">
+            <button type="button" class="fc-btn w-full text-left px-4 py-3 flex items-center justify-between gap-2 cursor-pointer" aria-expanded="false" data-idx="${idx}">
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-extrabold text-slate-900 text-sm sm:text-base">${item.verb}</span>
+                  <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full ${item.badge}">${item.family}</span>
+                </div>
+                <p class="en-text text-xs text-slate-500 mt-0.5">${item.en}</p>
+              </div>
+              <svg class="fc-chev w-4 h-4 text-slate-400 transition-transform duration-200 shrink-0 no-print" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="fc-body hidden print-expand px-4 pb-3.5 pt-2 bg-white border-t border-slate-200 text-xs">
+              <div class="space-y-1">
+                ${item.forms.map((f, i) => `
+                  <div class="flex items-center justify-between py-0.5 border-b border-slate-100 last:border-0">
+                    <span class="text-slate-500">${pronounsLatam[i]}</span>
+                    <span class="font-bold text-slate-800">${f}</span>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100">
+                <p class="font-medium text-indigo-800">${item.exEs}</p>
+                <p class="en-text text-slate-500 italic mt-0.5">${item.exEn}</p>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        grid.querySelectorAll('.fc-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const card = btn.closest('.flashcard');
+            const body = card.querySelector('.fc-body');
+            const chev = btn.querySelector('.fc-chev');
+            const open = !body.classList.contains('hidden');
+            body.classList.toggle('hidden', open);
+            chev.classList.toggle('rotate-180', !open);
+            btn.setAttribute('aria-expanded', String(!open));
+          });
+        });
+
+        const toggleAllBtn = document.getElementById('toggleAllCardsBtn');
+        let allOpen = false;
+        if (toggleAllBtn) {
+          toggleAllBtn.addEventListener('click', () => {
+            allOpen = !allOpen;
+            grid.querySelectorAll('.flashcard').forEach((card) => {
+              card.querySelector('.fc-body').classList.toggle('hidden', !allOpen);
+              card.querySelector('.fc-chev').classList.toggle('rotate-180', allOpen);
+              card.querySelector('.fc-btn').setAttribute('aria-expanded', String(allOpen));
+            });
+            toggleAllBtn.textContent = allOpen ? 'Contraer todas' : 'Expandir todas';
+          });
+        }
+      }
+
+      // =========================================================================
+      // SECTION 1: CALENTAMIENTO — OPCIÓN MÚLTIPLE (10 EJERCICIOS)
+      // =========================================================================
+      const sec1Data = [
+        {
+          q: 'Ayer mi mamá ______ con mi abuela por teléfono.',
+          en: 'Yesterday my mom spoke with my grandmother on the phone.',
+          options: ['hablo', 'habló', 'hablé', 'hablaron'],
+          correct: 1,
+          expEs: '"Mi mamá" (ella) + verbo -AR → terminación -ó con tilde ("hablo" sin tilde es presente "yo").',
+          expEn: '"Mi mamá" (ella) + -AR verb → -ó with accent ("hablo" without accent is present "I speak").'
+        },
+        {
+          q: 'El fin de semana pasado yo ______ a Guadalajara.',
+          en: 'Last weekend I went to Guadalajara.',
+          options: ['fue', 'iba', 'fui', 'fuimos'],
+          correct: 2,
+          expEs: 'El verbo "ir" en pretérito para "yo" es "fui" (sin tilde).',
+          expEn: 'The preterite of "ir" for "yo" is "fui" (no accent).'
+        },
+        {
+          q: 'Anoche nosotros ______ enchiladas verdes.',
+          en: 'Last night we ate green enchiladas.',
+          options: ['comimos', 'comemos', 'comieron', 'comí'],
+          correct: 0,
+          expEs: 'Verbo regular -ER en "nosotros" → terminación -imos (comimos).',
+          expEn: 'Regular -ER verb for "nosotros" → -imos ending (comimos).'
+        },
+        {
+          q: '¿Qué ______ tú ayer por la tarde?',
+          en: 'What did you do yesterday afternoon?',
+          options: ['hizo', 'hiciste', 'hice', 'haciste'],
+          correct: 1,
+          expEs: 'Grupo I: "hacer" tiene raíz "hic-" + "-iste" para "tú" → hiciste.',
+          expEn: 'I-stem: "hacer" uses stem "hic-" + "-iste" for "tú" → hiciste.'
+        },
+        {
+          q: 'El lunes pasado Carlos ______ mucho trabajo.',
+          en: 'Last Monday Carlos had a lot of work.',
+          options: ['tenió', 'tuve', 'tuvo', 'tuvó'],
+          correct: 2,
+          expEs: 'Grupo U: "tener" usa raíz "tuv-" + "-o" (sin tilde) → tuvo.',
+          expEn: 'U-stem: "tener" uses stem "tuv-" + "-o" (no accent) → tuvo.'
+        },
+        {
+          q: 'Mis amigos me ______ que la película estuvo genial.',
+          en: 'My friends told me that the movie was great.',
+          options: ['dijieron', 'decieron', 'dijo', 'dijeron'],
+          correct: 3,
+          expEs: 'Grupo J ("decir"): en "ellos/ustedes" se quita la "i" → dijeron.',
+          expEn: 'J-stem ("decir"): drop the "i" for ellos/ustedes → dijeron.'
+        },
+        {
+          q: 'En 2022 yo ______ en Monterrey durante seis meses.',
+          en: 'In 2022 I lived in Monterrey for six months.',
+          options: ['viví', 'vivi', 'vivió', 'viviste'],
+          correct: 0,
+          expEs: 'Verbo regular -IR en "yo" → terminación -í con tilde (viví).',
+          expEn: 'Regular -IR verb for "yo" → -í with accent (viví).'
+        },
+        {
+          q: 'La fiesta de cumpleaños de Ana ______ muy divertida.',
+          en: 'Ana\'s birthday party was very fun.',
+          options: ['fui', 'fueron', 'fue', 'estuvó'],
+          correct: 2,
+          expEs: 'Para describir un evento terminado usamos "ser": la fiesta (ella) → fue.',
+          expEn: 'To describe a completed event we use "ser": la fiesta (it) → fue.'
+        },
+        {
+          q: 'Ayer Sofía ______ un pastel de tres leches.',
+          en: 'Yesterday Sofía made a tres leches cake.',
+          options: ['hico', 'hizó', 'hizo', 'hace'],
+          correct: 2,
+          expEs: 'En "él/ella/usted", "hacer" cambia la "c" por "z" y NO lleva tilde → hizo.',
+          expEn: 'For "él/ella/usted", "hacer" changes "c" to "z" with NO accent → hizo.'
+        },
+        {
+          q: '¿Ustedes ______ el partido de futbol anoche?',
+          en: 'Did you all watch the soccer game last night?',
+          options: ['vieron', 'vimos', 'vio', 'veron'],
+          correct: 0,
+          expEs: 'Verbo corto "ver" para "ustedes" → vieron.',
+          expEn: 'Short verb "ver" for "ustedes" → vieron.'
+        }
+      ];
+
+      const sec1State = new Array(10).fill(null); // stores selected option index
+
+      function renderSection1() {
+        const list = document.getElementById('sec-1-list');
+        if (!list) return;
+
+        list.innerHTML = sec1Data.map((item, idx) => `
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4" id="s1-card-${idx}">
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+              <div class="flex-1 min-w-0">
+                <p class="font-semibold text-slate-900 text-sm sm:text-base">${item.q}</p>
+                <p class="en-text text-xs text-slate-500 italic mt-0.5">${item.en}</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
+                  ${item.options.map((opt, oIdx) => `
+                    <button
+                      type="button"
+                      data-q="${idx}"
+                      data-opt="${oIdx}"
+                      class="s1-opt-btn px-3 py-2 rounded-xl text-sm font-semibold bg-white hover:bg-indigo-50 text-slate-800 border border-slate-300 transition-all cursor-pointer text-center"
+                    >${opt}</button>
+                  `).join('')}
+                </div>
+                <div id="s1-fb-${idx}" class="hidden mt-2.5 text-xs sm:text-sm rounded-xl p-2.5 border"></div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        list.querySelectorAll('.s1-opt-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const qIdx = Number(btn.dataset.q);
+            const oIdx = Number(btn.dataset.opt);
+            selectSec1Option(qIdx, oIdx);
+          });
+        });
+
+        document.getElementById('sec-1-show').addEventListener('click', () => {
+          sec1Data.forEach((item, idx) => selectSec1Option(idx, item.correct, true));
+        });
+
+        document.getElementById('sec-1-reset').addEventListener('click', () => {
+          sec1State.fill(null);
+          renderSection1();
+          updateScore(1, 0);
+        });
+      }
+
+      function selectSec1Option(qIdx, oIdx, isReveal = false) {
+        sec1State[qIdx] = oIdx;
+        const item = sec1Data[qIdx];
+        const card = document.getElementById(`s1-card-${qIdx}`);
+        const fb = document.getElementById(`s1-fb-${qIdx}`);
+        const btns = card.querySelectorAll('.s1-opt-btn');
+
+        btns.forEach((b, i) => {
+          b.className = 's1-opt-btn px-3 py-2 rounded-xl text-sm font-semibold border transition-all cursor-pointer text-center ';
+          if (i === oIdx && i === item.correct) {
+            b.className += 'bg-emerald-600 text-white border-emerald-600 shadow-xs';
+          } else if (i === oIdx && i !== item.correct) {
+            b.className += 'bg-rose-600 text-white border-rose-600 shadow-xs';
+          } else if (i === item.correct) {
+            b.className += 'bg-emerald-50 text-emerald-800 border-emerald-400';
+          } else {
+            b.className += 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50';
+          }
+        });
+
+        const isRight = oIdx === item.correct;
+        fb.classList.remove('hidden');
+        if (isRight) {
+          fb.className = 'mt-2.5 text-xs sm:text-sm rounded-xl p-2.5 border bg-emerald-50 border-emerald-200 text-emerald-900';
+          fb.innerHTML = `<p class="font-bold">${isReveal ? 'Respuesta correcta:' : '✓ ¡Correcto!'} <span class="font-normal">${item.expEs}</span></p><p class="en-text text-xs text-emerald-800/80 italic mt-0.5">${item.expEn}</p>`;
+        } else {
+          fb.className = 'mt-2.5 text-xs sm:text-sm rounded-xl p-2.5 border bg-rose-50 border-rose-200 text-rose-900';
+          fb.innerHTML = `<p class="font-bold">✗ Respuesta correcta: <span class="underline">${item.options[item.correct]}</span>. <span class="font-normal">${item.expEs}</span></p><p class="en-text text-xs text-rose-800/80 italic mt-0.5">${item.expEn}</p>`;
+        }
+
+        const score = sec1State.reduce((acc, sel, idx) => acc + (sel === sec1Data[idx].correct ? 1 : 0), 0);
+        updateScore(1, score);
+      }
+
+      // =========================================================================
+      // SECTION 2 (REGULARES) & SECTION 3 (IRREGULARES) — FILL IN THE BLANK
+      // =========================================================================
+      const sec2Data = [
+        { before: 'Anoche yo', after: '(cenar) tacos de canasta con mi hermano.', answer: 'cené', en: 'Last night I had basket tacos for dinner with my brother.', hintEs: 'Regular -AR, forma "yo" (-é con tilde).', hintEn: 'Regular -AR, "yo" form (-é with accent).' },
+        { before: 'Ayer tú', after: '(platicar) dos horas con tu mejor amiga.', answer: 'platicaste', en: 'Yesterday you chatted for two hours with your best friend.', hintEs: 'Regular -AR, forma "tú" (-aste, sin tilde).', hintEn: 'Regular -AR, "tú" form (-aste, no accent).' },
+        { before: 'El verano pasado mi familia', after: '(viajar) a Cancún.', answer: 'viajó', en: 'Last summer my family traveled to Cancún.', hintEs: 'Regular -AR, "mi familia" = ella (-ó con tilde).', hintEn: 'Regular -AR, "mi familia" = singular (-ó with accent).' },
+        { before: 'La semana pasada nosotros', after: '(estudiar) mucho para el examen.', answer: 'estudiamos', en: 'Last week we studied a lot for the exam.', hintEs: 'Regular -AR, forma "nosotros" (-amos, igual al presente).', hintEn: 'Regular -AR, "nosotros" form (-amos, same as present).' },
+        { before: 'Esta mañana mis compañeros', after: '(beber) café de olla.', answer: 'bebieron', en: 'This morning my classmates drank spiced Mexican coffee.', hintEs: 'Regular -ER, forma "ellos" (-ieron).', hintEn: 'Regular -ER, "ellos" form (-ieron).' },
+        { before: 'Ayer por la mañana yo', after: '(abrir) todas las ventanas de mi cuarto.', answer: 'abrí', en: 'Yesterday morning I opened all the windows in my room.', hintEs: 'Regular -IR, forma "yo" (-í con tilde).', hintEn: 'Regular -IR, "yo" form (-í with accent).' },
+        { before: 'Mis abuelos', after: '(vivir) en Puebla durante veinte años.', answer: 'vivieron', en: 'My grandparents lived in Puebla for twenty years.', hintEs: 'Regular -IR, forma "ellos" (-ieron).', hintEn: 'Regular -IR, "ellos" form (-ieron).' },
+        { before: 'El sábado Elena', after: '(comprar) fruta fresca en el tianguis.', answer: 'compró', en: 'On Saturday Elena bought fresh fruit at the street market.', hintEs: 'Regular -AR, forma "ella" (-ó con tilde).', hintEn: 'Regular -AR, "ella" form (-ó with accent).' },
+        { before: 'Hace dos días tú', after: '(escribir) un mensaje muy bonito.', answer: 'escribiste', en: 'Two days ago you wrote a very nice message.', hintEs: 'Regular -IR, forma "tú" (-iste).', hintEn: 'Regular -IR, "tú" form (-iste).' },
+        { before: 'El domingo nosotros', after: '(correr) cinco kilómetros en el parque.', answer: 'corrimos', en: 'On Sunday we ran five kilometers in the park.', hintEs: 'Regular -ER, forma "nosotros" (-imos).', hintEn: 'Regular -ER, "nosotros" form (-imos).' }
+      ];
+
+      const sec3Data = [
+        { before: 'Ayer yo', after: '(ir) al cine con mis primos.', answer: 'fui', en: 'Yesterday I went to the movies with my cousins.', hintEs: 'Los Gemelos (ir/ser), forma "yo" | sin tilde.', hintEn: 'The Twins (ir/ser), "yo" form | no accent.' },
+        { before: 'El concierto del sábado', after: '(ser) espectacular.', answer: 'fue', en: 'Saturday\'s concert was spectacular.', hintEs: 'Los Gemelos (ir/ser), forma "él" | sin tilde.', hintEn: 'The Twins (ir/ser), "él" form | no accent.' },
+        { before: 'El mes pasado nosotros', after: '(tener) unas vacaciones increíbles.', answer: 'tuvimos', en: 'Last month we had an incredible vacation.', hintEs: 'Grupo U: tuv- + -imos | sin tilde.', hintEn: 'U-Stem: tuv- + -imos | no accent.' },
+        { before: '¿Dónde', after: '(estar) tú ayer por la noche?', answer: 'estuviste', en: 'Where were you last night?', hintEs: 'Grupo U: estuv- + -iste | sin tilde.', hintEn: 'U-Stem: estuv- + -iste | no accent.' },
+        { before: 'Mi hermano', after: '(hacer) su tarea antes de cenar.', answer: 'hizo', en: 'My brother did his homework before dinner.', hintEs: 'Grupo I: hic- cambia a hiz- en "él" + -o | sin tilde.', hintEn: 'I-Stem: hic- becomes hiz- for "él" + -o | no accent.' },
+        { before: 'Lo siento, ayer yo no', after: '(poder) contestar tu llamada.', answer: 'pude', en: 'I\'m sorry, yesterday I couldn\'t answer your call.', hintEs: 'Grupo U: pud- + -e | sin tilde.', hintEn: 'U-Stem: pud- + -e | no accent.' },
+        { before: 'Ustedes', after: '(poner) los platos en la mesa.', answer: 'pusieron', en: 'You all put the plates on the table.', hintEs: 'Grupo U: pus- + -ieron | sin tilde.', hintEn: 'U-Stem: pus- + -ieron | no accent.' },
+        { before: 'Hace tres días mis tíos', after: '(venir) a visitarnos desde Mérida.', answer: 'vinieron', en: 'Three days ago my aunt and uncle came to visit us from Mérida.', hintEs: 'Grupo I: vin- + -ieron | sin tilde.', hintEn: 'I-Stem: vin- + -ieron | no accent.' },
+        { before: 'Anoche la doctora me', after: '(decir) que debo descansar más.', answer: 'dijo', en: 'Last night the doctor told me I should rest more.', hintEs: 'Grupo J: dij- + -o | sin tilde.', hintEn: 'J-Stem: dij- + -o | no accent.' },
+        { before: 'En mi cumpleaños mi mejor amigo me', after: '(dar) un libro excelente.', answer: 'dio', en: 'On my birthday my best friend gave me an excellent book.', hintEs: 'Verbo corto (dar), forma "él" | sin tilde.', hintEn: 'Short verb (dar), "él" form | no accent.' }
+      ];
+
+      function renderFillSection(secNum, data) {
+        const list = document.getElementById(`sec-${secNum}-list`);
+        if (!list) return;
+
+        list.innerHTML = data.map((ex, idx) => `
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/50 p-3.5 sm:p-4 transition-colors" id="s${secNum}-row-${idx}">
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-sm sm:text-base text-slate-800 leading-relaxed flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
+                  <span>${ex.before}</span>
+                  <input
+                    id="s${secNum}-in-${idx}"
+                    type="text"
+                    autocomplete="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    placeholder="..."
+                    aria-label="Sección ${secNum} ejercicio ${idx + 1}"
+                    class="track-focus w-36 sm:w-40 px-3 py-1 rounded-xl border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm sm:text-base focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all"
+                  />
+                  <span>${ex.after}</span>
+                </div>
+                <p class="en-text text-xs text-slate-500 italic mt-1">${ex.en}</p>
+
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  <button type="button" class="no-print hint-btn inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold bg-white hover:bg-amber-50 text-amber-700 border border-amber-200 cursor-pointer" data-target="s${secNum}-hint-${idx}">
+                    💡 Pista <span class="en-text font-normal">/ Hint</span>
+                  </button>
+                  <span id="s${secNum}-fb-${idx}" class="hidden text-xs sm:text-sm font-semibold"></span>
+                </div>
+
+                <div id="s${secNum}-hint-${idx}" class="hidden mt-2 p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 no-print">
+                  <p class="font-medium">${ex.hintEs}</p>
+                  <p class="en-text text-amber-800/80 italic mt-0.5">${ex.hintEn}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        // Wire hints and Enter key
+        list.querySelectorAll('.hint-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            document.getElementById(btn.dataset.target).classList.toggle('hidden');
+          });
+        });
+
+        list.querySelectorAll('input').forEach((inp) => {
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              checkFillSection(secNum, data);
+            }
+          });
+        });
+
+        document.getElementById(`sec-${secNum}-check`).addEventListener('click', () => checkFillSection(secNum, data));
+        document.getElementById(`sec-${secNum}-show`).addEventListener('click', () => showFillSection(secNum, data));
+        document.getElementById(`sec-${secNum}-reset`).addEventListener('click', () => resetFillSection(secNum, data));
+      }
+
+      function checkFillSection(secNum, data) {
+        let correct = 0;
+        data.forEach((ex, idx) => {
+          const inp = document.getElementById(`s${secNum}-in-${idx}`);
+          const fb = document.getElementById(`s${secNum}-fb-${idx}`);
+          const row = document.getElementById(`s${secNum}-row-${idx}`);
+          const val = inp.value.trim().toLowerCase();
+          const exp = ex.answer.toLowerCase();
+
+          inp.className = 'track-focus w-36 sm:w-40 px-3 py-1 rounded-xl border-2 font-semibold text-sm sm:text-base focus:outline-none transition-all ';
+          row.className = 'rounded-2xl border p-3.5 sm:p-4 transition-colors ';
+          fb.classList.remove('hidden', 'text-emerald-700', 'text-amber-700', 'text-rose-600', 'text-teal-700');
+
+          if (val === exp) {
+            correct++;
+            inp.className += 'border-emerald-500 bg-emerald-50/50 text-emerald-900';
+            row.className += 'border-emerald-300 bg-emerald-50/30';
+            fb.classList.add('text-emerald-700');
+            fb.innerHTML = '✓ ¡Correcto! <span class="en-text font-normal">/ Correct!</span>';
+          } else if (val !== '' && stripAccents(val) === stripAccents(exp)) {
+            inp.className += 'border-amber-500 bg-amber-50/60 text-amber-900';
+            row.className += 'border-amber-300 bg-amber-50/30';
+            fb.classList.add('text-amber-700');
+            fb.innerHTML = `⚠ ¡Casi! Te faltó o sobró la tilde: <strong class="underline">${ex.answer}</strong> <span class="en-text font-normal">/ Check accent</span>`;
+          } else {
+            inp.className += 'border-rose-500 bg-rose-50/50 text-rose-900';
+            row.className += 'border-rose-200 bg-rose-50/20';
+            fb.classList.add('text-rose-600');
+            fb.innerHTML = `✗ Respuesta correcta: <strong class="underline">${ex.answer}</strong>`;
+          }
+        });
+        updateScore(secNum, correct);
+      }
+
+      function showFillSection(secNum, data) {
+        data.forEach((ex, idx) => {
+          const inp = document.getElementById(`s${secNum}-in-${idx}`);
+          const fb = document.getElementById(`s${secNum}-fb-${idx}`);
+          const row = document.getElementById(`s${secNum}-row-${idx}`);
+          inp.value = ex.answer;
+          inp.className = 'track-focus w-36 sm:w-40 px-3 py-1 rounded-xl border-2 border-teal-500 bg-teal-50/40 text-teal-900 font-semibold text-sm sm:text-base focus:outline-none transition-all';
+          row.className = 'rounded-2xl border border-slate-200 bg-slate-50/50 p-3.5 sm:p-4 transition-colors';
+          fb.classList.remove('hidden', 'text-emerald-700', 'text-amber-700', 'text-rose-600');
+          fb.classList.add('text-teal-700');
+          fb.innerHTML = 'Respuesta mostrada <span class="en-text font-normal">/ Answer shown</span>';
+        });
+      }
+
+      function resetFillSection(secNum, data) {
+        data.forEach((_, idx) => {
+          const inp = document.getElementById(`s${secNum}-in-${idx}`);
+          const fb = document.getElementById(`s${secNum}-fb-${idx}`);
+          const row = document.getElementById(`s${secNum}-row-${idx}`);
+          const hint = document.getElementById(`s${secNum}-hint-${idx}`);
+          inp.value = '';
+          inp.className = 'track-focus w-36 sm:w-40 px-3 py-1 rounded-xl border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm sm:text-base focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all';
+          row.className = 'rounded-2xl border border-slate-200 bg-slate-50/50 p-3.5 sm:p-4 transition-colors';
+          fb.classList.add('hidden');
+          fb.textContent = '';
+          if (hint) hint.classList.add('hidden');
+        });
+        updateScore(secNum, 0);
+      }
+
+      // =========================================================================
+      // SECTION 4: ¡DETECTIVE DE ERRORES! (10 EJERCICIOS)
+      // =========================================================================
+      const sec4Data = [
+        {
+          sentenceHtml: 'Ayer yo <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">comi</span> pozole en casa de mi abuela.',
+          en: 'Yesterday I ate pozole at my grandmother\'s house.',
+          answer: 'comí',
+          expEs: 'Los verbos regulares -ER/-IR en "yo" siempre llevan tilde en la "-í".',
+          expEn: 'Regular -ER/-IR verbs in "yo" always take an accent on "-í".'
+        },
+        {
+          sentenceHtml: 'Ella <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">hico</span> su tarea muy rápido.',
+          en: 'She did her homework very quickly.',
+          answer: 'hizo',
+          expEs: 'En "él/ella/usted", "hacer" cambia "c" por "z" para mantener el sonido suave → hizo.',
+          expEn: 'In "él/ella/usted", "hacer" changes "c" to "z" to keep the soft sound → hizo.'
+        },
+        {
+          sentenceHtml: 'El domingo nosotros <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">fuemos</span> al parque Chapultepec.',
+          en: 'On Sunday we went to Chapultepec Park.',
+          answer: 'fuimos',
+          expEs: 'La forma correcta de "ir/ser" para "nosotros" es "fuimos" (con "i").',
+          expEn: 'The correct "nosotros" form of "ir/ser" is "fuimos" (with an "i").'
+        },
+        {
+          sentenceHtml: '¿Qué <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">hicistes</span> anoche con tus amigos?',
+          en: 'What did you do last night with your friends?',
+          answer: 'hiciste',
+          expEs: 'En pretérito, la forma "tú" NUNCA termina en "-s" → hiciste.',
+          expEn: 'In the preterite, the "tú" form NEVER ends in "-s" → hiciste.'
+        },
+        {
+          sentenceHtml: 'Ellos <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">dijieron</span> toda la verdad.',
+          en: 'They told the whole truth.',
+          answer: 'dijeron',
+          expEs: 'En el Grupo J (decir, traer), "ellos/ustedes" pierde la "i" → dijeron.',
+          expEn: 'In J-stems (decir, traer), "ellos/ustedes" drops the "i" → dijeron.'
+        },
+        {
+          sentenceHtml: 'Ayer yo <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">tuvé</span> un excelente día en el trabajo.',
+          en: 'Yesterday I had an excellent day at work.',
+          answer: 'tuve',
+          expEs: 'Regla de Oro: los verbos irregulares de raíz (tuv-) NO llevan tilde → tuve.',
+          expEn: 'Golden Rule: irregular stem verbs (tuv-) take NO accent marks → tuve.'
+        },
+        {
+          sentenceHtml: 'Él <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">escribio</span> un correo al profesor.',
+          en: 'He wrote an email to the teacher.',
+          answer: 'escribió',
+          expEs: 'Verbo regular -IR en "él/ella/usted" lleva tilde en la "-ó" → escribió.',
+          expEn: 'Regular -IR verb in "él/ella/usted" needs an accent on "-ó" → escribió.'
+        },
+        {
+          sentenceHtml: 'Tú <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">poniste</span> las llaves aquí encima.',
+          en: 'You put the keys right here on top.',
+          answer: 'pusiste',
+          expEs: '"Poner" es irregular del Grupo U (raíz "pus-") → pusiste.',
+          expEn: '"Poner" is a U-stem irregular verb (stem "pus-") → pusiste.'
+        },
+        {
+          sentenceHtml: 'Mis amigos <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">venieron</span> a mi casa para cenar.',
+          en: 'My friends came to my house for dinner.',
+          answer: 'vinieron',
+          expEs: '"Venir" es irregular del Grupo I (raíz "vin-") → vinieron.',
+          expEn: '"Venir" is an I-stem irregular verb (stem "vin-") → vinieron.'
+        },
+        {
+          sentenceHtml: 'Ayer <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-700 font-bold line-through decoration-rose-500">fui</span> un día increíble en la playa.',
+          en: 'Yesterday was an incredible day at the beach.',
+          answer: 'fue',
+          expEs: 'El sujeto es "un día" (3.ª persona singular), no "yo" → fue.',
+          expEn: 'The subject is "a day" (3rd person singular), not "I" → fue.'
+        }
+      ];
+
+      function renderSection4() {
+        const list = document.getElementById('sec-4-list');
+        if (!list) return;
+
+        list.innerHTML = sec4Data.map((ex, idx) => `
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/50 p-4 transition-colors" id="s4-row-${idx}">
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+              <div class="flex-1 min-w-0 space-y-2">
+                <div>
+                  <p class="text-sm sm:text-base text-slate-900 font-medium">${ex.sentenceHtml}</p>
+                  <p class="en-text text-xs text-slate-500 italic mt-0.5">${ex.en}</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <label for="s4-in-${idx}" class="text-xs font-bold text-slate-600">Corrección:</label>
+                  <input
+                    id="s4-in-${idx}"
+                    type="text"
+                    autocomplete="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    placeholder="Escribe el verbo..."
+                    class="track-focus w-40 px-3 py-1 rounded-xl border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all"
+                  />
+                  <button type="button" data-idx="${idx}" class="s4-single-check no-print px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 cursor-pointer">
+                    Comprobar
+                  </button>
+                </div>
+                <div id="s4-fb-${idx}" class="hidden text-xs sm:text-sm rounded-xl p-2.5 border"></div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        list.querySelectorAll('.s4-single-check').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            checkSec4Item(Number(btn.dataset.idx));
+            recalcSec4Score();
+          });
+        });
+
+        list.querySelectorAll('input').forEach((inp, idx) => {
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              checkSec4Item(idx);
+              recalcSec4Score();
+            }
+          });
+        });
+
+        document.getElementById('sec-4-check').addEventListener('click', () => {
+          sec4Data.forEach((_, idx) => checkSec4Item(idx));
+          recalcSec4Score();
+        });
+
+        document.getElementById('sec-4-show').addEventListener('click', () => {
+          sec4Data.forEach((ex, idx) => {
+            const inp = document.getElementById(`s4-in-${idx}`);
+            const fb = document.getElementById(`s4-fb-${idx}`);
+            inp.value = ex.answer;
+            inp.className = 'track-focus w-40 px-3 py-1 rounded-xl border-2 border-teal-500 bg-teal-50/40 text-teal-900 font-semibold text-sm focus:outline-none';
+            fb.className = 'text-xs sm:text-sm rounded-xl p-2.5 border bg-teal-50 border-teal-200 text-teal-900';
+            fb.innerHTML = `<p><strong>${ex.answer}</strong> — ${ex.expEs}</p><p class="en-text text-xs text-teal-800/80 italic mt-0.5">${ex.expEn}</p>`;
+          });
+        });
+
+        document.getElementById('sec-4-reset').addEventListener('click', () => {
+          sec4Data.forEach((_, idx) => {
+            const inp = document.getElementById(`s4-in-${idx}`);
+            const fb = document.getElementById(`s4-fb-${idx}`);
+            const row = document.getElementById(`s4-row-${idx}`);
+            inp.value = '';
+            inp.className = 'track-focus w-40 px-3 py-1 rounded-xl border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all';
+            row.className = 'rounded-2xl border border-slate-200 bg-slate-50/50 p-4 transition-colors';
+            fb.classList.add('hidden');
+          });
+          updateScore(4, 0);
+        });
+      }
+
+      function checkSec4Item(idx) {
+        const ex = sec4Data[idx];
+        const inp = document.getElementById(`s4-in-${idx}`);
+        const fb = document.getElementById(`s4-fb-${idx}`);
+        const row = document.getElementById(`s4-row-${idx}`);
+        const val = inp.value.trim().toLowerCase();
+        const exp = ex.answer.toLowerCase();
+
+        fb.classList.remove('hidden');
+        if (val === exp) {
+          inp.className = 'track-focus w-40 px-3 py-1 rounded-xl border-2 border-emerald-500 bg-emerald-50/50 text-emerald-900 font-semibold text-sm focus:outline-none';
+          row.className = 'rounded-2xl border border-emerald-300 bg-emerald-50/30 p-4 transition-colors';
+          fb.className = 'text-xs sm:text-sm rounded-xl p-2.5 border bg-emerald-50 border-emerald-200 text-emerald-900';
+          fb.innerHTML = `<p><strong>✓ ¡Muy bien!</strong> ${ex.expEs}</p><p class="en-text text-xs text-emerald-800/80 italic mt-0.5">${ex.expEn}</p>`;
+        } else if (val !== '' && stripAccents(val) === stripAccents(exp)) {
+          inp.className = 'track-focus w-40 px-3 py-1 rounded-xl border-2 border-amber-500 bg-amber-50/60 text-amber-900 font-semibold text-sm focus:outline-none';
+          row.className = 'rounded-2xl border border-amber-300 bg-amber-50/30 p-4 transition-colors';
+          fb.className = 'text-xs sm:text-sm rounded-xl p-2.5 border bg-amber-50 border-amber-200 text-amber-900';
+          fb.innerHTML = `<p><strong>⚠ ¡Casi! Revisa la tilde:</strong> <strong class="underline">${ex.answer}</strong>. ${ex.expEs}</p><p class="en-text text-xs text-amber-800/80 italic mt-0.5">${ex.expEn}</p>`;
+        } else {
+          inp.className = 'track-focus w-40 px-3 py-1 rounded-xl border-2 border-rose-500 bg-rose-50/50 text-rose-900 font-semibold text-sm focus:outline-none';
+          row.className = 'rounded-2xl border border-rose-200 bg-rose-50/20 p-4 transition-colors';
+          fb.className = 'text-xs sm:text-sm rounded-xl p-2.5 border bg-rose-50 border-rose-200 text-rose-900';
+          fb.innerHTML = `<p><strong>✗ Respuesta correcta: <span class="underline">${ex.answer}</span>.</strong> ${ex.expEs}</p><p class="en-text text-xs text-rose-800/80 italic mt-0.5">${ex.expEn}</p>`;
+        }
+      }
+
+      function recalcSec4Score() {
+        let correct = 0;
+        sec4Data.forEach((ex, idx) => {
+          const val = document.getElementById(`s4-in-${idx}`).value.trim().toLowerCase();
+          if (val === ex.answer.toLowerCase()) correct++;
+        });
+        updateScore(4, correct);
+      }
+
+      // =========================================================================
+      // SECTION 5: HISTORIA EN CONTEXTO — "UN FIN DE SEMANA EN OAXACA" (10 ESPACIOS)
+      // =========================================================================
+      const sec5Blanks = [
+        { num: 1, inf: 'ir', answer: 'fuimos' },
+        { num: 2, inf: 'llegar', answer: 'llegamos' },
+        { num: 3, inf: 'tener', answer: 'tuvimos' },
+        { num: 4, inf: 'visitar', answer: 'visitamos' },
+        { num: 5, inf: 'tomar', answer: 'tomamos' },
+        { num: 6, inf: 'caminar', answer: 'caminamos' },
+        { num: 7, inf: 'comprar', answer: 'compré' },
+        { num: 8, inf: 'comer', answer: 'comimos' },
+        { num: 9, inf: 'ver', answer: 'vimos' },
+        { num: 10, inf: 'ser', answer: 'fue' }
+      ];
+
+      function storyInputHtml(idx) {
+        const b = sec5Blanks[idx];
+        return `<span class="inline-flex items-baseline gap-1 mx-0.5"><span class="text-[11px] font-bold text-indigo-600">${b.num}.</span><input id="s5-in-${idx}" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="..." aria-label="Espacio ${b.num} (${b.inf})" class="track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:border-indigo-500 transition-all" /><span class="text-xs font-semibold text-slate-500">(${b.inf})</span></span>`;
+      }
+
+      function renderSection5() {
+        const box = document.getElementById('oaxacaStoryBox');
+        if (!box) return;
+
+        box.innerHTML = `
+          <p>
+            El fin de semana pasado, mi mejor amiga Valeria y yo ${storyInputHtml(0)} a Oaxaca. El viernes por la noche nosotras ${storyInputHtml(1)} a un hotel muy bonito cerca del Zócalo. El sábado por la mañana ${storyInputHtml(2)} un desayuno delicioso con chocolate caliente y pan de yema. Después ${storyInputHtml(3)} Monte Albán y ${storyInputHtml(4)} muchas fotos de las pirámides.
+          </p>
+          <p>
+            Por la tarde, ${storyInputHtml(5)} por el centro histórico y yo ${storyInputHtml(6)} un alebrije de colores para mi mamá. En la noche ${storyInputHtml(7)} tlayudas gigantes en un mercado tradicional. El domingo ${storyInputHtml(8)} un espectáculo de danza tradicional en la plaza principal. ¡El viaje ${storyInputHtml(9)} inolvidable!
+          </p>
+        `;
+
+        box.querySelectorAll('input').forEach((inp) => {
+          inp.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              checkSection5();
+            }
+          });
+        });
+
+        document.getElementById('toggleStoryEnBtn').addEventListener('click', () => {
+          const enBox = document.getElementById('oaxacaStoryEn');
+          enBox.classList.toggle('hidden');
+        });
+
+        document.getElementById('sec-5-check').addEventListener('click', checkSection5);
+
+        document.getElementById('sec-5-show').addEventListener('click', () => {
+          sec5Blanks.forEach((b, idx) => {
+            const inp = document.getElementById(`s5-in-${idx}`);
+            inp.value = b.answer;
+            inp.className = 'track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-teal-500 bg-teal-50/50 text-teal-900 font-semibold text-sm focus:outline-none';
+          });
+          const fb = document.getElementById('sec-5-feedback');
+          fb.className = 'rounded-2xl p-3.5 text-xs sm:text-sm border bg-teal-50 border-teal-200 text-teal-900 font-medium';
+          fb.textContent = 'Se mostraron las 10 respuestas correctas de la historia.';
+        });
+
+        document.getElementById('sec-5-reset').addEventListener('click', () => {
+          sec5Blanks.forEach((_, idx) => {
+            const inp = document.getElementById(`s5-in-${idx}`);
+            inp.value = '';
+            inp.className = 'track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-slate-300 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:border-indigo-500 transition-all';
+          });
+          document.getElementById('sec-5-feedback').classList.add('hidden');
+          updateScore(5, 0);
+        });
+      }
+
+      function checkSection5() {
+        let correct = 0;
+        const notes = [];
+
+        sec5Blanks.forEach((b, idx) => {
+          const inp = document.getElementById(`s5-in-${idx}`);
+          const val = inp.value.trim().toLowerCase();
+          const exp = b.answer.toLowerCase();
+
+          if (val === exp) {
+            correct++;
+            inp.className = 'track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-emerald-500 bg-emerald-50/50 text-emerald-900 font-semibold text-sm focus:outline-none';
+          } else if (val !== '' && stripAccents(val) === stripAccents(exp)) {
+            inp.className = 'track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-amber-500 bg-amber-50/60 text-amber-900 font-semibold text-sm focus:outline-none';
+            notes.push(`#${b.num}: ¡Casi! Revisa la tilde → <strong>${b.answer}</strong>`);
+          } else {
+            inp.className = 'track-focus w-28 sm:w-32 px-2.5 py-0.5 rounded-lg border-2 border-rose-500 bg-rose-50/50 text-rose-900 font-semibold text-sm focus:outline-none';
+            notes.push(`#${b.num} (${b.inf}): <strong>${b.answer}</strong>`);
+          }
+        });
+
+        const fb = document.getElementById('sec-5-feedback');
+        if (correct === 10) {
+          fb.className = 'rounded-2xl p-4 text-xs sm:text-sm border bg-emerald-50 border-emerald-200 text-emerald-900 font-bold';
+          fb.innerHTML = '🎉 ¡Excelente! Completaste toda la historia de Oaxaca sin errores. <span class="en-text font-normal">/ Perfect score!</span>';
+        } else {
+          fb.className = 'rounded-2xl p-4 text-xs sm:text-sm border bg-amber-50 border-amber-200 text-amber-950 space-y-1';
+          fb.innerHTML = `<p class="font-bold">Obtuviste ${correct} / 10. Revisa estos espacios:</p><p class="leading-relaxed">${notes.join(' &nbsp;•&nbsp; ')}</p>`;
+        }
+        updateScore(5, correct);
+      }
+
+      // =========================================================================
+      // SECTION 6: CONSTRUCTOR DE ORACIONES — ORDENA LAS PALABRAS (10 EJERCICIOS)
+      // =========================================================================
+      const sec6Data = [
+        {
+          en: 'Yesterday I went to the market with my mom.',
+          correct: ['Ayer', 'fui', 'al', 'mercado', 'con', 'mi', 'mamá.'],
+          shuffled: ['mercado', 'mamá.', 'Ayer', 'con', 'fui', 'mi', 'al']
+        },
+        {
+          en: 'Last night we ate delicious tacos.',
+          correct: ['Anoche', 'cenamos', 'unos', 'tacos', 'deliciosos.'],
+          shuffled: ['tacos', 'Anoche', 'deliciosos.', 'cenamos', 'unos']
+        },
+        {
+          en: 'My sister made a very rich chocolate cake.',
+          correct: ['Mi', 'hermana', 'hizo', 'un', 'pastel', 'de', 'chocolate.'],
+          shuffled: ['pastel', 'Mi', 'hizo', 'chocolate.', 'hermana', 'de', 'un']
+        },
+        {
+          en: 'What time did you arrive at school yesterday?',
+          correct: ['¿A', 'qué', 'hora', 'llegaste', 'ayer', 'a', 'la', 'escuela?'],
+          shuffled: ['llegaste', 'escuela?', '¿A', 'hora', 'la', 'qué', 'ayer', 'a']
+        },
+        {
+          en: 'Last week my friends came to my house.',
+          correct: ['La', 'semana', 'pasada', 'mis', 'amigos', 'vinieron', 'a', 'mi', 'casa.'],
+          shuffled: ['vinieron', 'casa.', 'La', 'amigos', 'pasada', 'mi', 'semana', 'a', 'mis']
+        },
+        {
+          en: 'I couldn\'t sleep well last night.',
+          correct: ['Anoche', 'no', 'pude', 'dormir', 'bien.'],
+          shuffled: ['dormir', 'Anoche', 'bien.', 'pude', 'no']
+        },
+        {
+          en: 'Carlos bought a gift for his girlfriend.',
+          correct: ['Carlos', 'compró', 'un', 'regalo', 'para', 'su', 'novia.'],
+          shuffled: ['regalo', 'novia.', 'Carlos', 'para', 'compró', 'su', 'un']
+        },
+        {
+          en: 'My parents lived in Guadalajara for five years.',
+          correct: ['Mis', 'padres', 'vivieron', 'cinco', 'años', 'en', 'Guadalajara.'],
+          shuffled: ['vivieron', 'Guadalajara.', 'Mis', 'en', 'años', 'padres', 'cinco']
+        },
+        {
+          en: 'They told me the truth yesterday.',
+          correct: ['Ellos', 'me', 'dijeron', 'la', 'verdad', 'ayer.'],
+          shuffled: ['verdad', 'Ellos', 'ayer.', 'dijeron', 'la', 'me']
+        },
+        {
+          en: 'On Sunday we saw an incredible movie.',
+          correct: ['El', 'domingo', 'vimos', 'una', 'película', 'increíble.'],
+          shuffled: ['película', 'El', 'increíble.', 'vimos', 'domingo', 'una']
+        }
+      ];
+
+      // Each item holds { bank: [{id, text}], placed: [{id, text}], correct: boolean }
+      const sec6State = sec6Data.map((item) => ({
+        bank: item.shuffled.map((word, i) => ({ id: i, text: word })),
+        placed: [],
+        isCorrect: false
+      }));
+
+      function renderSection6() {
+        const list = document.getElementById('sec-6-list');
+        if (!list) return;
+
+        list.innerHTML = sec6Data.map((item, idx) => `
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 space-y-3" id="s6-card-${idx}">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex items-start gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+                <div>
+                  <p class="en-text text-xs sm:text-sm font-semibold text-indigo-700">${item.en}</p>
+                  <p class="text-[11px] text-slate-500">Haz clic en las palabras en orden:</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1.5 no-print shrink-0">
+                <button type="button" data-idx="${idx}" class="s6-verify-one px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 cursor-pointer">Verificar</button>
+                <button type="button" data-idx="${idx}" class="s6-reset-one px-2.5 py-1 rounded-lg text-xs font-semibold bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 cursor-pointer">Reiniciar</button>
+              </div>
+            </div>
+
+            <!-- Answer Drop Zone -->
+            <div id="s6-zone-${idx}" class="min-h-[46px] rounded-xl bg-white border-2 border-dashed border-slate-300 p-2 flex flex-wrap items-center gap-1.5"></div>
+
+            <!-- Word Chip Bank -->
+            <div id="s6-bank-${idx}" class="flex flex-wrap items-center gap-1.5"></div>
+
+            <!-- Feedback -->
+            <div id="s6-fb-${idx}" class="hidden text-xs sm:text-sm font-semibold"></div>
+          </div>
+        `).join('');
+
+        sec6Data.forEach((_, idx) => drawSec6Chips(idx));
+
+        list.querySelectorAll('.s6-verify-one').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            verifySec6Item(Number(btn.dataset.idx));
+            recalcSec6Score();
+          });
+        });
+
+        list.querySelectorAll('.s6-reset-one').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            resetSec6Item(Number(btn.dataset.idx));
+            recalcSec6Score();
+          });
+        });
+
+        document.getElementById('sec-6-check').addEventListener('click', () => {
+          sec6Data.forEach((_, idx) => verifySec6Item(idx));
+          recalcSec6Score();
+        });
+
+        document.getElementById('sec-6-show').addEventListener('click', () => {
+          sec6Data.forEach((item, idx) => {
+            sec6State[idx].bank = [];
+            sec6State[idx].placed = item.correct.map((w, i) => ({ id: i, text: w }));
+            sec6State[idx].isCorrect = false; // showing answer doesn't auto-award unless checked, or keep neutral
+            drawSec6Chips(idx);
+            const fb = document.getElementById(`s6-fb-${idx}`);
+            fb.className = 'text-xs sm:text-sm font-semibold text-teal-700';
+            fb.textContent = 'Respuesta mostrada';
+          });
+        });
+
+        document.getElementById('sec-6-reset').addEventListener('click', () => {
+          sec6Data.forEach((_, idx) => resetSec6Item(idx));
+          updateScore(6, 0);
+        });
+      }
+
+      function drawSec6Chips(idx) {
+        const zone = document.getElementById(`s6-zone-${idx}`);
+        const bank = document.getElementById(`s6-bank-${idx}`);
+        const st = sec6State[idx];
+
+        if (st.placed.length === 0) {
+          zone.innerHTML = '<span class="text-xs text-slate-400 px-1.5 select-none">Tu oración aparecerá aquí...</span>';
+        } else {
+          zone.innerHTML = st.placed.map((chip) => `
+            <button type="button" data-chip-id="${chip.id}" class="px-3 py-1.5 rounded-xl text-sm font-semibold bg-indigo-600 text-white hover:bg-indigo-700 shadow-xs transition-transform active:scale-95 cursor-pointer">
+              ${chip.text}
+            </button>
+          `).join('');
+          zone.querySelectorAll('button').forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const id = Number(btn.dataset.chipId);
+              const pos = st.placed.findIndex((c) => c.id === id);
+              if (pos !== -1) {
+                const [moved] = st.placed.splice(pos, 1);
+                st.bank.push(moved);
+                drawSec6Chips(idx);
+              }
+            });
+          });
+        }
+
+        bank.innerHTML = st.bank.map((chip) => `
+          <button type="button" data-chip-id="${chip.id}" class="px-3 py-1.5 rounded-xl text-sm font-semibold bg-white text-slate-800 hover:bg-indigo-50 hover:text-indigo-700 border border-slate-300 shadow-xs transition-transform active:scale-95 cursor-pointer">
+            ${chip.text}
+          </button>
+        `).join('');
+
+        bank.querySelectorAll('button').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const id = Number(btn.dataset.chipId);
+            const pos = st.bank.findIndex((c) => c.id === id);
+            if (pos !== -1) {
+              const [moved] = st.bank.splice(pos, 1);
+              st.placed.push(moved);
+              drawSec6Chips(idx);
+            }
+          });
+        });
+      }
+
+      function verifySec6Item(idx) {
+        const item = sec6Data[idx];
+        const st = sec6State[idx];
+        const zone = document.getElementById(`s6-zone-${idx}`);
+        const fb = document.getElementById(`s6-fb-${idx}`);
+        const userSentence = st.placed.map((c) => c.text).join(' ');
+        const targetSentence = item.correct.join(' ');
+
+        if (userSentence === targetSentence) {
+          st.isCorrect = true;
+          zone.className = 'min-h-[46px] rounded-xl bg-emerald-50/50 border-2 border-emerald-400 p-2 flex flex-wrap items-center gap-1.5';
+          fb.className = 'text-xs sm:text-sm font-semibold text-emerald-700';
+          fb.innerHTML = '✓ ¡Oración perfecta! <span class="en-text font-normal">/ Perfect sentence!</span>';
+        } else {
+          st.isCorrect = false;
+          zone.className = 'min-h-[46px] rounded-xl bg-rose-50/40 border-2 border-rose-400 p-2 flex flex-wrap items-center gap-1.5';
+          fb.className = 'text-xs sm:text-sm font-semibold text-rose-600';
+          fb.innerHTML = `✗ Orden correcto: <span class="underline text-slate-800">${targetSentence}</span>`;
+        }
+      }
+
+      function resetSec6Item(idx) {
+        sec6State[idx] = {
+          bank: sec6Data[idx].shuffled.map((w, i) => ({ id: i, text: w })),
+          placed: [],
+          isCorrect: false
+        };
+        const zone = document.getElementById(`s6-zone-${idx}`);
+        const fb = document.getElementById(`s6-fb-${idx}`);
+        zone.className = 'min-h-[46px] rounded-xl bg-white border-2 border-dashed border-slate-300 p-2 flex flex-wrap items-center gap-1.5';
+        fb.classList.add('hidden');
+        drawSec6Chips(idx);
+      }
+
+      function recalcSec6Score() {
+        const score = sec6State.filter((s) => s.isCorrect).length;
+        updateScore(6, score);
+      }
+
+      // =========================================================================
+      // SECTION 7: PRODUCCIÓN ORAL Y ESCRITA — CONVERSACIÓN (10 PREGUNTAS)
+      // =========================================================================
+      const sec7Data = [
+        {
+          q: '¿Qué desayunaste hoy por la mañana?',
+          en: 'What did you have for breakfast this morning?',
+          modelEs: 'Hoy desayuné huevos revueltos con frijoles y tomé un café con leche.',
+          modelEn: 'Today I had scrambled eggs with beans for breakfast and drank a coffee with milk.'
+        },
+        {
+          q: '¿A dónde fuiste el fin de semana pasado?',
+          en: 'Where did you go last weekend?',
+          modelEs: 'El fin de semana pasado fui al parque con mi perro y después visité a mis papás.',
+          modelEn: 'Last weekend I went to the park with my dog and then visited my parents.'
+        },
+        {
+          q: '¿Qué película o serie viste recientemente? ¿Te gustó?',
+          en: 'What movie or series did you watch recently? Did you like it?',
+          modelEs: 'Anoche vi una comedia muy buena en Netflix. Me gustó mucho porque fue muy divertida.',
+          modelEn: 'Last night I watched a very good comedy on Netflix. I liked it a lot because it was very funny.'
+        },
+        {
+          q: '¿Con quién hablaste ayer por teléfono o por mensaje?',
+          en: 'Who did you talk to yesterday on the phone or by text?',
+          modelEs: 'Ayer hablé con mi mejor amigo y platicamos sobre nuestros planes para el viernes.',
+          modelEn: 'Yesterday I talked with my best friend and we chatted about our plans for Friday.'
+        },
+        {
+          q: '¿Qué compraste la última vez que fuiste de compras?',
+          en: 'What did you buy the last time you went shopping?',
+          modelEs: 'El sábado fui al centro comercial y compré unos tenis nuevos y una camiseta.',
+          modelEn: 'On Saturday I went to the mall and bought new sneakers and a T-shirt.'
+        },
+        {
+          q: '¿Qué hiciste en tu último cumpleaños?',
+          en: 'What did you do on your last birthday?',
+          modelEs: 'En mi último cumpleaños cené en un restaurante mexicano con mi familia y comimos pastel.',
+          modelEn: 'On my last birthday I had dinner at a Mexican restaurant with my family and we ate cake.'
+        },
+        {
+          q: '¿A qué hora te dormiste anoche y cómo descansaste?',
+          en: 'What time did you go to sleep last night and how did you rest?',
+          modelEs: 'Anoche me dormí a las once y descansé muy bien porque estuve cansado todo el día.',
+          modelEn: 'Last night I went to sleep at eleven and rested very well because I was tired all day.'
+        },
+        {
+          q: '¿Cuál fue el último viaje que hiciste? ¿Qué te gustó más?',
+          en: 'What was the last trip you took? What did you like most?',
+          modelEs: 'El año pasado viajé a Oaxaca. Lo que más me gustó fue la comida y las calles del centro.',
+          modelEn: 'Last year I traveled to Oaxaca. What I liked most was the food and the downtown streets.'
+        },
+        {
+          q: '¿Aprendiste algo nuevo la semana pasada?',
+          en: 'Did you learn something new last week?',
+          modelEs: 'Sí, la semana pasada aprendí a cocinar chilaquiles y practiqué muchos verbos en español.',
+          modelEn: 'Yes, last week I learned to cook chilaquiles and practiced many Spanish verbs.'
+        },
+        {
+          q: '¿Tuviste algún problema o sorpresa interesante esta semana?',
+          en: 'Did you have any interesting problem or surprise this week?',
+          modelEs: 'El martes no pude encontrar mis llaves, pero al final las vi debajo de un libro.',
+          modelEn: 'On Tuesday I couldn\'t find my keys, but in the end I saw them under a book.'
+        }
+      ];
+
+      const sec7Done = new Array(10).fill(false);
+
+      function renderSection7() {
+        const list = document.getElementById('sec-7-list');
+        if (!list) return;
+
+        list.innerHTML = sec7Data.map((item, idx) => `
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 flex flex-col justify-between gap-3 transition-colors" id="s7-card-${idx}">
+            <div class="space-y-2.5">
+              <div class="flex items-start justify-between gap-2">
+                <div class="flex items-start gap-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">${idx + 1}</span>
+                  <div>
+                    <p class="font-bold text-slate-900 text-sm sm:text-base leading-snug">${item.q}</p>
+                    <p class="en-text text-xs text-slate-500 italic mt-0.5">${item.en}</p>
+                  </div>
+                </div>
+              </div>
+
+              <textarea
+                id="s7-note-${idx}"
+                rows="2"
+                placeholder="Tus notas o respuesta escrita (opcional)..."
+                class="track-focus w-full px-3 py-2 rounded-xl border border-slate-300 bg-white text-sm text-slate-800 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 resize-y"
+              ></textarea>
+
+              <!-- Collapsible Model Answer -->
+              <div id="s7-model-${idx}" class="hidden rounded-xl bg-teal-50 border border-teal-200 p-3 text-xs text-teal-900">
+                <p class="font-bold text-teal-800 mb-0.5">Ejemplo de respuesta (A2):</p>
+                <p class="font-medium">${item.modelEs}</p>
+                <p class="en-text text-teal-700 italic mt-0.5">${item.modelEn}</p>
+              </div>
+            </div>
+
+            <!-- Card Footer Actions -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-200/80 no-print">
+              <button
+                type="button"
+                data-idx="${idx}"
+                class="s7-model-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white hover:bg-teal-50 text-teal-700 border border-teal-200 transition-colors cursor-pointer"
+              >
+                Ver ejemplo de respuesta
+              </button>
+
+              <button
+                type="button"
+                id="s7-done-btn-${idx}"
+                data-idx="${idx}"
+                aria-pressed="false"
+                class="s7-done-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-emerald-50 text-slate-600 border border-slate-300 transition-colors cursor-pointer"
+              >
+                ✓ Practicada
+              </button>
+            </div>
+          </div>
+        `).join('');
+
+        list.querySelectorAll('.s7-model-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const box = document.getElementById(`s7-model-${btn.dataset.idx}`);
+            const open = !box.classList.contains('hidden');
+            box.classList.toggle('hidden', open);
+            btn.textContent = open ? 'Ver ejemplo de respuesta' : 'Ocultar ejemplo';
+          });
+        });
+
+        list.querySelectorAll('.s7-done-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const idx = Number(btn.dataset.idx);
+            sec7Done[idx] = !sec7Done[idx];
+            updateSec7CardUI(idx);
+            updateScore(7, sec7Done.filter(Boolean).length);
+          });
+        });
+
+        document.getElementById('sec-7-show').addEventListener('click', () => {
+          sec7Data.forEach((_, idx) => {
+            document.getElementById(`s7-model-${idx}`).classList.remove('hidden');
+          });
+        });
+
+        document.getElementById('sec-7-reset').addEventListener('click', () => {
+          sec7Done.fill(false);
+          sec7Data.forEach((_, idx) => {
+            document.getElementById(`s7-note-${idx}`).value = '';
+            document.getElementById(`s7-model-${idx}`).classList.add('hidden');
+            updateSec7CardUI(idx);
+          });
+          updateScore(7, 0);
+        });
+      }
+
+      function updateSec7CardUI(idx) {
+        const done = sec7Done[idx];
+        const card = document.getElementById(`s7-card-${idx}`);
+        const btn = document.getElementById(`s7-done-btn-${idx}`);
+        btn.setAttribute('aria-pressed', String(done));
+        if (done) {
+          card.className = 'rounded-2xl border border-emerald-300 bg-emerald-50/30 p-4 flex flex-col justify-between gap-3 transition-colors';
+          btn.className = 's7-done-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white border border-emerald-600 transition-colors cursor-pointer';
+        } else {
+          card.className = 'rounded-2xl border border-slate-200 bg-slate-50/60 p-4 flex flex-col justify-between gap-3 transition-colors';
+          btn.className = 's7-done-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white hover:bg-emerald-50 text-slate-600 border border-slate-300 transition-colors cursor-pointer';
+        }
+      }
+
+      // =========================================================================
+      // FLOATING ACCENT BAR & HEADER CONTROLS
+      // =========================================================================
+      function setupAccentBarAndFocusTracking() {
+        // Track any text input or textarea focus globally via event delegation
+        document.addEventListener('focusin', (e) => {
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+            lastFocusedField = e.target;
+          }
+        });
+
+        document.querySelectorAll('.accent-btn').forEach((btn) => {
+          // Prevent stealing focus from active input/textarea
+          btn.addEventListener('mousedown', (e) => e.preventDefault());
+
+          btn.addEventListener('click', () => {
+            const char = btn.dataset.char;
+            const target = lastFocusedField || document.querySelector('input[type="text"], textarea');
+            if (!target) return;
+
+            const start = target.selectionStart ?? target.value.length;
+            const end = target.selectionEnd ?? target.value.length;
+            const val = target.value;
+
+            target.value = val.slice(0, start) + char + val.slice(end);
+            target.focus();
+            target.setSelectionRange(start + char.length, start + char.length);
+          });
+        });
+      }
+
+      function setupHeaderControls() {
+        // English ON / OFF Toggle
+        const enBtn = document.getElementById('toggleEnglishBtn');
+        const enLabel = document.getElementById('toggleEnglishLabel');
+        let englishOn = true;
+
+        enBtn.addEventListener('click', () => {
+          englishOn = !englishOn;
+          document.body.classList.toggle('hide-english', !englishOn);
+          enBtn.setAttribute('aria-pressed', String(englishOn));
+          enLabel.textContent = englishOn ? 'Inglés: ON' : 'Inglés: OFF';
+          if (englishOn) {
+            enBtn.className = 'inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200 transition-colors cursor-pointer';
+          } else {
+            enBtn.className = 'inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 border border-slate-300 transition-colors cursor-pointer';
+          }
+        });
+
+        // Collapsible Visual Guide Toggle
+        const guideBtn = document.getElementById('toggleGuideBtn');
+        const guideContent = document.getElementById('guideContent');
+        const guideLabel = document.getElementById('toggleGuideLabel');
+        const guideChev = document.getElementById('toggleGuideChevron');
+        let guideOpen = true;
+
+        guideBtn.addEventListener('click', () => {
+          guideOpen = !guideOpen;
+          guideContent.classList.toggle('hidden', !guideOpen);
+          guideLabel.textContent = guideOpen ? 'Ocultar guía' : 'Mostrar guía';
+          guideChev.classList.toggle('rotate-180', !guideOpen);
+          guideBtn.setAttribute('aria-expanded', String(guideOpen));
+        });
+      }
+
+      // =========================================================================
+      // INITIALIZE APP
+      // =========================================================================
+      document.addEventListener('DOMContentLoaded', () => {
+        try {
+          setupHeaderControls();
+          renderIrregularFlashcards();
+          renderSection1();
+          renderFillSection(2, sec2Data);
+          renderFillSection(3, sec3Data);
+          renderSection4();
+          renderSection5();
+          renderSection6();
+          renderSection7();
+          setupAccentBarAndFocusTracking();
+          updateScore(1, 0);
+        } catch (err) {
+          console.error('Error initializing Pretérito Indefinido lesson:', err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
